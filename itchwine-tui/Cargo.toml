@@ -1,0 +1,10 @@
+[package]
+name = "itchwine-tui"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+itchwine-api = { path = "../itchwine-api" }
+reqwest = "0.12.8"
+tokio = {version = "*", features = ["full"]}
+warp = "0.3.7"

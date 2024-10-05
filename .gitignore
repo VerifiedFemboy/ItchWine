@@ -1,0 +1,4 @@
+itchwine-api/target/
+itchwine-api/Cargo.lock
+itchwine-tui/target/
+itchwine-tui/Cargo.lock
