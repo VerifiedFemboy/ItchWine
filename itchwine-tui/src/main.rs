@@ -12,7 +12,7 @@ async fn main() {
         redirect_uri: "http://localhost:8080/callback".to_string(),
     };
 
-    let token_path = "/run/media/verifiedfemboy/Disk/programming/Rust/ItchWine/itchwine-tui/token.txt";
+    let token_path = "token.txt";
 
     let mut api = Api::new();
     if let Ok(mut file) = File::open(token_path) {
