@@ -1,0 +1,36 @@
+name: Rust
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build-api:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: itchwine-api
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Build Api
+      run: cargo build --verbose
+  
+  build-terminal-chat:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: itchwine-tui
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Build Terminal User Interface
+      run: cargo build --verbose
+
