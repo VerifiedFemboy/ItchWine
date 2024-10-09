@@ -2,3 +2,5 @@ itchwine-api/target/
 itchwine-api/Cargo.lock
 itchwine-tui/target/
 itchwine-tui/Cargo.lock
+itchwine-gui/target/
+itchwine-gui/Cargo.lock
